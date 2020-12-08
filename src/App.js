@@ -1,10 +1,16 @@
-
-
+import React from 'react';
+import DashboardGrid from './components/grid-dash/DashboardGrid'
+import "bootstrap/dist/css/bootstrap.css";
+import Navbar from './Navbar'
+import Profile from './components/Profile'
+import style from './assets/style.css';
 function App() {
   return (
-    <div >
-    
+    <div>
+      <Navbar/>
+      <DashboardGrid/>
     </div>
+   
   );
 }
 

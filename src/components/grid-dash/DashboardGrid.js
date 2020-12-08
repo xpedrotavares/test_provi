@@ -3,9 +3,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import style from '../../assets/style.css';
+import Profile from '../Profile'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    
   },
   paper: {
     padding: theme.spacing(2),
@@ -18,14 +20,16 @@ export default function DashboardGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} className="div-dashboard-grid">
 
-      <Grid container spacing={3}>
-      <aside>
+      <Grid className="mt-0" container spacing={0}>
+      <Profile/>
+        <Grid item xs={2}>
 
-</aside>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>
+        </Grid>
+
+        <Grid className="due-installments-grid mr-5 mt-5" item xs={4}>
+          <Paper className={`${classes.paper} due-installments-paper`}>
 
           <Paper className={classes.paper}></Paper>
           <br/>
@@ -33,15 +37,64 @@ export default function DashboardGrid() {
           <br/>
           <Paper className={classes.paper}></Paper>
           <br/>
+           <Paper className={classes.paper}></Paper>
+          <br/>
           <Paper className={classes.paper}></Paper>
           <br/>
           <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+       
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper> 
 
           </Paper>
         </Grid>
-        <Grid item xs={4}>
-        <Paper className={classes.paper}>xs=6</Paper>
-        <Paper className={classes.paper}>xs=6</Paper>
+        <Grid className="ml-5 mt-5" item xs={4}>
+        <Paper className={`${classes.paper} chart-paper`}>
+        <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          
+        </Paper>
+        <Paper className={`${classes.paper} paid-installments-grid mt-5`}>
+        <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+          <br/>
+          <Paper className={classes.paper}></Paper>
+        </Paper>
         </Grid>
       </Grid>
   

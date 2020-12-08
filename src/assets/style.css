@@ -1,5 +1,152 @@
-aside {
+
+
+body{
+    background-color: #EBECF0!important;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.avatar {
+    object-fit: cover;
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+
+article{
+    width: 161.5px;
+    text-align: left;
+  }
+  
+  .aside-profile h5 {
+    font-size: 1rem;
+    margin: 20px 0 40px;
+}  
+
+  article h6 {
+      color: #000B3C;
+    font-size: 0.9rem;
+    margin-bottom: 1px;
+}  
+
+article p {
+    width: fit-content;
+    word-wrap: break-word;
+    color: #898989;
+    font-size: 0.9rem;
+    
+}
+
+span {
+box-sizing: content-box;
+width: 80%;
+}
+
+.chat-button {
+    width: 148px;
+    height: 35px;
+    background: #DE0C4B;
+    border-radius: 50px;
+    color: white;
+
+
+}
+/* 
+.one {
+    border: 2px solid red;
     height: 100vh;
-    width: 20%;
-    background-color: antiquewhite;
+}
+
+.two {
+    border: 2px solid blue;
+    height: 100vh;
+} */
+.chat-button {
+    width: 148px;
+    height: 35px;
+    background: #DE0C4B;
+    border-radius: 50px;
+    color: white;
+
+}
+
+.chat-button:hover {
+    color: #000B3C;
+    text-decoration: none;
+}
+
+.p-alert-profile {
+
+width: 195px;
+height: 28px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+
+color: #DE0C4B;
+
+
+}
+
+.aside-profile{
+    /* Rectangle 2 */
+z-index: -1;
+
+width: 18vw;
+height: 93vh;
+position: absolute;
+box-sizing: content-box;
+
+
+
+background: #FFFFFF;
+box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.25);
+border-radius: 0px 15px 15px 0px;
+
+
+
+}
+
+.logo{
+    width: 120px;
+}
+
+nav{
+    overflow: hidden;
+    top: 0!important;
+    position: fixed!important;
+    height: 7vh;
+    width: 100vw;
+    background-color:#FFFFFF;
+}
+
+.due-installments-grid{
+    height: 82vh;
+    overflow-y: scroll;
+    margin-left: 6% !important;
+}
+
+
+.due-installments-paper{
+    min-height: 82vh;
+    margin-left: 6% !important;
+}
+
+.div-dashboard-grid:not(Profile){
+    margin-top: 7vh!important;
+
+}
+
+.paid-installments-grid{
+    min-height: 37vh;
+    overflow-y: scroll;
+}
+
+.chart-paper{
+    min-height: 37vh;
+    overflow-y: scroll;
 }
