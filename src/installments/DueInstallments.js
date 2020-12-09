@@ -3,6 +3,7 @@ import React from 'react';
 // import UserPhoto from '../assets/images/Profile.jpg'
 
 const DueInstallments = () =>{
+    
     return (
      
      

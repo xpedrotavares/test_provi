@@ -9,7 +9,7 @@ const Navbar = () =>{
         // <img src={LogoPhoto} alt='Logo da provi' className='logo' />
         
         // </nav>
-        <nav class="navbar navbar-light bg-light">
+        <nav className="navbar navbar-light bg-light">
         <img src={LogoPhoto} alt='Logo da provi' className='logo' />
       </nav>
      

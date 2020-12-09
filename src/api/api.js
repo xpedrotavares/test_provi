@@ -1,11 +1,12 @@
-import axios from 'axios';
-
-const api = axios.create({baseURL:'http://www.mocky.io/v2/5c923b0932000029056bce39'});
+const api_url = 'http://www.mocky.io/v2/5c923b0932000029056bce39';
 
 
 async function getApiData() {
-    const { data } = await api.get(`${api}`);
-    return data;
+    const response = await fetch(api_url);
+    const data = await response.json();
+    return data;   
 }
 
-export default api;
+getApiData();
+
+export default getApiData;
