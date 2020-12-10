@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import style from '../../assets/style.css';
 import Profile from '../Profile'
 import DueInstallments from '../../installments/DueInstallments';
+import PaidInstallments from '../../installments/PaidInstallments';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -57,17 +58,10 @@ export default function DashboardGrid() {
           
         </Paper>
         <Paper className={`${classes.paper} paid-installments-grid mt-5`}>
-        <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
+
+          <PaidInstallments/>
+        
+          
         </Paper>
         </Grid>
       </Grid>

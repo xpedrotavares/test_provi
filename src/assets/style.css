@@ -134,6 +134,7 @@ nav{
     margin-left: 6% !important;
 }
 
+
 .div-dashboard-grid:not(Profile){
     margin-top: 7vh!important;
 
@@ -141,6 +142,7 @@ nav{
 
 .paid-installments-grid{
     min-height: 37vh;
+    max-height: 37vh;
     overflow-y: scroll;
 }
 
@@ -168,6 +170,12 @@ nav{
       height: 12px;
       background-color: red;
       border-radius: 50%;
+  }
+  .dot-status-paid{
+    width: 12px;
+    height: 12px;
+    background-color: rgb(1, 200, 1);
+    border-radius: 50%;
   }
 
 
