@@ -150,3 +150,17 @@ nav{
     min-height: 37vh;
     overflow-y: scroll;
 }
+
+
+
+
+
+.info-item {
+    width: 15vw;
+    height: 5vh;
+    padding: 2em;
+    border: 2px solid rgb(159, 12, 22);
+    align-self: center;
+    background-color: #63b7af;
+    border-radius: 2em;
+  }

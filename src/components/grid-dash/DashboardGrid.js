@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import style from '../../assets/style.css';
 import Profile from '../Profile'
+import DueInstallments from '../../installments/DueInstallments';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -25,44 +26,17 @@ export default function DashboardGrid() {
       <Grid className="mt-0" container spacing={0}>
       <Profile/>
         <Grid item xs={2}>
-
+        
+        
         </Grid>
 
         <Grid className="due-installments-grid mr-5 mt-5" item xs={4}>
           <Paper className={`${classes.paper} due-installments-paper`}>
 
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-           <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-       
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper> 
+          
+          <DueInstallments/>
+         
+          
 
           </Paper>
         </Grid>
