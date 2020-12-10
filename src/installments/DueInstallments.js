@@ -24,11 +24,27 @@ const DueInstallments = () => {
 
   return (
     <div>
+        <div className='d-flex justify-content-start'>
+
+        <h4 className='mb-4'>Suas Faturas</h4>
+        </div>
       {userData.map((item) =>
-        item.installments.map((subItem) => (
-          <div>
-            <Paper className={classes.paper}>
-              <h6>{subItem.formatedValue}</h6>
+        item.installments.map((subItem, i) => (
+          <div className="">
+            <Paper className={`${classes.paper}`}>
+            {/* <div className="ribbon ribbon-top-right"><span>Nao pago
+                </span></div> */}
+            <div className='d-flex flex-row justify-content-between'>
+              <h5 className='value-intallment'>Valor: {subItem.formatedValue}</h5>
+              <span className='dot'></span>
+              </div>
+            <div className='d-flex'>
+              <h6 className='due-date'>Vencimento: {subItem.dueDate}</h6>
+            </div>
+            <div className='d-flex flex-row justify-content-between'>
+            <button className='btn-pay btn-14'>Pagar</button>
+               <p className='installments-counter'>{i + 1}/7 </p> 
+            </div>
             </Paper>
             <br />
           </div>
