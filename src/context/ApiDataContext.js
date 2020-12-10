@@ -16,6 +16,9 @@ export const ApiDataProvider = (props) => {
   useEffect(() => {
     getApiData();
   }, []);
+//   console.log(userData[0].amountTaken)
+  
+
 
   return (
     <ApiDataContext.Provider value={[userData, setUserData]}>

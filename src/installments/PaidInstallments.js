@@ -24,10 +24,9 @@ const useStyles = makeStyles((theme) => ({
 
 
 const PaidInstallments = () =>{
-
     const classes = useStyles();
     const [userData, setUserData] = useContext(ApiDataContext);
-  
+ 
 
     return (
         <div>
@@ -36,7 +35,8 @@ const PaidInstallments = () =>{
         <h4 className='mb-4'>Faturas Pagas</h4>
         </div>
       {userData.map((item) =>
-        item.installments.map((subItem, i) => (
+        item.installments.reverse().map((subItem, i) => (
+            
           <div className="">
             <Paper className={`${classes.paper}`}>
             {/* <div className="ribbon ribbon-top-right"><span>Nao pago
@@ -50,7 +50,7 @@ const PaidInstallments = () =>{
             </div>
             <div className='d-flex flex-row justify-content-between'>
             <button className='btn-pay btn-14'>Recibo</button>
-               <p className='installments-counter'>{i + 1}/7 </p> 
+               {/* <p className='installments-counter'>{i + 7 }/7 </p>  */}
             </div>
             </Paper>
             <br />

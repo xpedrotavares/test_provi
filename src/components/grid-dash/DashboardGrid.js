@@ -6,6 +6,7 @@ import style from '../../assets/style.css';
 import Profile from '../Profile'
 import DueInstallments from '../../installments/DueInstallments';
 import PaidInstallments from '../../installments/PaidInstallments';
+import Chart from '../../installments/Chart'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -43,18 +44,14 @@ export default function DashboardGrid() {
         </Grid>
         <Grid className="ml-5 mt-5" item xs={4}>
         <Paper className={`${classes.paper} chart-paper`}>
-        <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
-          <Paper className={classes.paper}></Paper>
-          <br/>
+          <div className='d-flex justify-content-start'>
+
+          <h4>Seu emprestimo em numeros:</h4>
+          </div>
+        <Paper className={classes.paper}>
+
+          <Chart/>
+        </Paper>
           
         </Paper>
         <Paper className={`${classes.paper} paid-installments-grid mt-5`}>

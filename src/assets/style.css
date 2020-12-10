@@ -147,7 +147,7 @@ nav{
 }
 
 .chart-paper{
-    min-height: 37vh;
+    max-height: 37vh;
     overflow-y: scroll;
 }
 
