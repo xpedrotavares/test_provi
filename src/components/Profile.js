@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext} from 'react';
+import {InstallmentDataContext} from '../context/InstallmentDataContext'
 // import style from '../assets/style/style.css';
 import UserPhoto from '../assets/images/Profile.jpg'
 
 const Profile = () =>{
+    const [installmentData, setInstallmentData] = useContext(InstallmentDataContext);
     return (
-        
+
         <div className='aside-profile d-flex flex-column align-items-center justify-content-center'>
         <img src={UserPhoto} alt='avatar' className='avatar' />
-        <h5>Pedro Tavares de Souza</h5>
+        <h5>Joana Alves Dias</h5>
+        <p className='p-user-id' key={installmentData.userId}>Seu id: {installmentData.userId}</p>
         <article>
             <h6>CPF</h6>
             <p>123.456.789-10</p>
@@ -30,7 +33,7 @@ por favor entre em contato conosco!</p>
             <hr/>
         </span> 
         <a className="chat-button mt-3 d-flex align-items-center justify-content-center">
-            Abrir chat!
+            Abrir chat
         </a>
      </div>
     )

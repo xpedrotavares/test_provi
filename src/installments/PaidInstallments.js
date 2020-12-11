@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
       textAlign: "center",
       color: theme.palette.text.secondary,
+      elevation: 4
     },
   }));
   
@@ -37,18 +38,18 @@ const PaidInstallments = () =>{
       {userData.map((item) =>
         item.installments.reverse().map((subItem, i) => (
             
-          <div className="">
-            <Paper className={`${classes.paper}`}>
+          <div key={i} className="">
+            <Paper key={item}  className={`${classes.paper}`}>
             {/* <div className="ribbon ribbon-top-right"><span>Nao pago
                 </span></div> */}
-            <div className='d-flex flex-row justify-content-between'>
+            <div key={subItem.formatedValue} className='d-flex flex-row justify-content-between'>
               <h5 className='value-intallment'>Valor: {subItem.formatedValue}</h5>
               <span className='dot-status-paid'></span>
               </div>
-            <div className='d-flex'>
+            <div key={subItem.dueDate} className='d-flex'>
               <h6 className='due-date'>Vencimento: {subItem.dueDate}</h6>
             </div>
-            <div className='d-flex flex-row justify-content-between'>
+            <div key={i+1} className='d-flex flex-row justify-content-between'>
             <button className='btn-pay btn-14'>Recibo</button>
                {/* <p className='installments-counter'>{i + 7 }/7 </p>  */}
             </div>

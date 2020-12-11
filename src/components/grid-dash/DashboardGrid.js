@@ -46,7 +46,7 @@ export default function DashboardGrid() {
         <Paper className={`${classes.paper} chart-paper`}>
           <div className='d-flex justify-content-start'>
 
-          <h4>Seu emprestimo em numeros:</h4>
+          <h4>Seu empréstimo em números</h4>
           </div>
         <Paper className={classes.paper}>
 

@@ -32,6 +32,23 @@ const DueInstallments = () => {
         <Paper>
 
         </Paper>
+
+        <Paper  className={`${classes.paper} MuiPaper-elevation4` }>
+            {/* <div className="ribbon ribbon-top-right"><span>Nao pago
+                </span></div> */}
+            <div  className='d-flex flex-row justify-content-between'>
+              <h5 className='value-intallment' >Valor: R$500 </h5>
+              <span className='dot-due'></span>
+              </div>
+            <div  className='d-flex'>
+              <h6 className='due-date'>Vencimento: 20/01/2021 </h6>
+            </div>
+            <div  className='d-flex flex-row justify-content-between'>
+            <button className='btn-pay btn-14'>Pagar</button>
+               <p className='installments-counter'>1/7 </p> 
+            </div>
+            </Paper>
+            <br/>
       {userData.map((item) =>
         item.installments.map((subItem, i) => (
           <div key={i} className="">

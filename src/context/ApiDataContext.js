@@ -10,17 +10,7 @@ export const ApiDataProvider = (props) => {
 
   async function getApiData() {
     const response = await axios.get(api_url);
-    setUserData([response.data],
-      
-      {
-        userId: response.data.UserId,
-        amountPayd: response.data.amountPayd,
-        amountTaken: response.data.amountTaken,
-        totalAmountInTaxes: response.data.totalAmountInTaxes,
-        // installment: response.data.installments
-      }
-      
-      );
+    setUserData([response.data]);
   }
   
   useEffect(() => {
