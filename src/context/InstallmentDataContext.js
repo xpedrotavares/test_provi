@@ -1,16 +1,16 @@
 import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
 import DueInstallments from "../installments/DueInstallments";
-export const ApiDataContext = createContext();
+export const InstallmentDataContext = createContext();
 
-export const ApiDataProvider = (props) => {
-  const [userData, setUserData] = useState([]);
+export const InstallmentDataProvider = (props) => {
+  const [installmentData, setInstallmentData] = useState([]);
 
   const api_url = "http://www.mocky.io/v2/5c923b0932000029056bce39";
 
-  async function getApiData() {
+  async function getInstallmentData() {
     const response = await axios.get(api_url);
-    setUserData([response.data],
+    setInstallmentData(
       
       {
         userId: response.data.UserId,
@@ -24,16 +24,16 @@ export const ApiDataProvider = (props) => {
   }
   
   useEffect(() => {
-    getApiData();
+    getInstallmentData();
   }, []);
-  // console.log('aqui =>' + userData.installments)
-//   console.log(userData[0].amountTaken)
+  // console.log('aqui =>' + InstallmentData.installments)
+//   console.log(InstallmentData[0].amountTaken)
   
 
 
   return (
-    <ApiDataContext.Provider value={[userData, setUserData]}>
+    <InstallmentDataContext.Provider value={[installmentData, setInstallmentData]}>
       {props.children}
-    </ApiDataContext.Provider>
+    </InstallmentDataContext.Provider>
   );
 };

@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
+    elevation: 4,
   },
 }));
 
@@ -28,20 +29,23 @@ const DueInstallments = () => {
 
         <h4 className='mb-4'>Suas Faturas</h4>
         </div>
+        <Paper>
+
+        </Paper>
       {userData.map((item) =>
         item.installments.map((subItem, i) => (
-          <div className="">
-            <Paper className={`${classes.paper}`}>
+          <div key={i} className="">
+            <Paper key={item} className={`${classes.paper} MuiPaper-elevation4` }>
             {/* <div className="ribbon ribbon-top-right"><span>Nao pago
                 </span></div> */}
-            <div className='d-flex flex-row justify-content-between'>
-              <h5 className='value-intallment'>Valor: {subItem.formatedValue}</h5>
+            <div key={subItem.formatedValue} className='d-flex flex-row justify-content-between'>
+              <h5 className='value-intallment' >Valor: {subItem.formatedValue}</h5>
               <span className='dot'></span>
               </div>
-            <div className='d-flex'>
+            <div key={subItem.dueDate} className='d-flex'>
               <h6 className='due-date'>Vencimento: {subItem.dueDate}</h6>
             </div>
-            <div className='d-flex flex-row justify-content-between'>
+            <div key={i+1} className='d-flex flex-row justify-content-between'>
             <button className='btn-pay btn-14'>Pagar</button>
                <p className='installments-counter'>{i + 1}/7 </p> 
             </div>

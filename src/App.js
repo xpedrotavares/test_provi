@@ -7,16 +7,20 @@ import Navbar from './Navbar'
 // import getApiData from './api/api'
 // import axios from 'axios'
 import { ApiDataProvider } from './context/ApiDataContext'
+import { InstallmentDataProvider } from './context/InstallmentDataContext'
 // import DueInstallments from './installments/DueInstallments';
 
 
 function App() {
   
   return (
+    <InstallmentDataProvider>
+
     <ApiDataProvider>
       <Navbar/>
       <DashboardGrid/>
       </ApiDataProvider>
+    </InstallmentDataProvider>
   );
 }
 
