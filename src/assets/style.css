@@ -1,293 +1,223 @@
-*{
-  font-family: 'Lato', sans-serif;
-
+* {
+  font-family: "Lato", sans-serif;
 }
 
-body{
-    background-color: #EBECF0!important;
-    max-width: 100vw;
-    max-height: 100vh;
-
+body {
+  background-color: #ebecf0 !important;
+  max-width: 100vw;
+  max-height: 100vh;
 }
+
+/* ----------------------- NAVBAR start ----------------------- */
+
+.logo {
+  width: 120px;
+}
+
+nav {
+  overflow: hidden;
+  top: 0 !important;
+  position: fixed !important;
+  height: 7vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.Logout-link {
+  color: #de0c4b !important;
+}
+/* ----------------------- NAVBAR end ----------------------- */
+
+/* ----------------------- PROFILE start ----------------------- */
 .avatar {
-    object-fit: cover;
-    vertical-align: middle;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-  }
+  object-fit: cover;
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 
+article {
+  width: 161.5px;
+  text-align: left;
+}
 
-article{
-    width: 161.5px;
-    text-align: left;
-  }
-  
-  .aside-profile h5 {
-    font-size: 1.2rem;
-    margin: 20px 0 0;
-}  
-.p-user-id{
+.aside-profile h5 {
+  font-size: 1.2rem;
+  margin: 20px 0 0;
+}
+.p-user-id {
   font-size: 14px;
   margin-bottom: 40px;
 }
 
-  article h6 {
-      color: #000B3C;
-    font-size: 1rem;
-    margin-bottom: 1px;
-}  
+article h6 {
+  color: #000b3c;
+  font-size: 1rem;
+  margin-bottom: 1px;
+}
 
 article p {
-    width: fit-content;
-    word-wrap: break-word;
-    color: #898989;
-    font-size: 0.9rem;
-    
+  width: fit-content;
+  word-wrap: break-word;
+  color: #898989;
+  font-size: 0.9rem;
 }
 
 span {
-box-sizing: content-box;
-width: 80%;
+  box-sizing: content-box;
+  width: 80%;
 }
 
 .chat-button {
-    width: 148px;
-    height: 35px;
-    background: #DE0C4B;
-    border-radius: 50px;
-    color: white;
-
-
-}
-/* 
-.one {
-    border: 2px solid red;
-    height: 100vh;
+  width: 148px;
+  height: 35px;
+  background: #de0c4b;
+  border-radius: 50px;
+  color: white;
 }
 
-.two {
-    border: 2px solid blue;
-    height: 100vh;
-} */
 .chat-button {
-    width: 148px;
-    height: 35px;
-    background: #DE0C4B;
-    border-radius: 50px;
-    color: white;
-
+  width: 148px;
+  height: 35px;
+  background: #de0c4b;
+  border-radius: 50px;
+  color: white;
 }
 
 .chat-button:hover {
-    color: #000B3C;
-    text-decoration: none;
+  color: #000b3c;
+  text-decoration: none;
 }
 
 .p-alert-profile {
+  width: 195px;
+  height: 28px;
 
-width: 195px;
-height: 28px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
-
-color: #DE0C4B;
-
-
+  color: #de0c4b;
 }
 
-.aside-profile{
-    /* Rectangle 2 */
-z-index: -1;
-
-width: 18vw;
-height: 93vh;
-position: absolute;
-box-sizing: content-box;
-
-
-
-background: #FFFFFF;
-box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.25);
-/* border-radius: 0px 15px 15px 0px; */
-
-
-
+.aside-profile {
+  z-index: -1;
+  width: 18vw;
+  height: 93vh;
+  position: absolute;
+  box-sizing: content-box;
+  background: #ffffff;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-.logo{
-    width: 120px;
+.div-dashboard-grid:not(Profile) {
+  margin-top: 7vh !important;
 }
 
-nav{
-    overflow: hidden;
-    top: 0!important;
-    position: fixed!important;
-    height: 7vh;
-    width: 100vw;
-    background-color:#FFFFFF;
+/* ----------------------- PROFILE end ----------------------- */
+
+/* ----------------------- DUE-INSTALLMENTS start ----------------------- */
+
+.due-installments-grid {
+  height: 82vh;
+  overflow-y: scroll;
+  margin-left: 6% !important;
 }
 
-.due-installments-grid{
-    height: 82vh;
-    overflow-y: scroll;
-    margin-left: 6% !important;
+.due-installments-paper {
+  min-height: 82vh;
+  margin-left: 6% !important;
 }
 
-
-.due-installments-paper{
-    min-height: 82vh;
-    margin-left: 6% !important;
-}
-
-
-.div-dashboard-grid:not(Profile){
-    margin-top: 7vh!important;
-
-}
-
-.paid-installments-grid{
-    
-    height: 40vh;
-    overflow-y: scroll;
-}
-
-.chart-paper{
-    max-height: 37vh;
-    overflow-y: scroll;
-}
-
-
-
-
-
-.info-item {
-    width: 15vw;
-    height: 5vh;
-    padding: 2em;
-    border: 2px solid rgb(159, 12, 22);
-    align-self: center;
-    background-color: #63b7af;
-    border-radius: 2em;
-  }
-
-  .dot{
-      width: 12px;
-      height: 12px;
-      background-color: red;
-      border-radius: 50%;
-  }
-  .dot-status-paid{
-    width: 12px;
-    height: 12px;
-    background-color: rgb(1, 200, 1);
-    border-radius: 50%;
-  }
-  .dot-due{
-    width: 12px;
-    height: 12px;
-    background-color: rgb(255, 230, 0);
-    border-radius: 50%;
-  }
-
-
-.btn-pay{
-    margin-top: 15px;
-    width: 80px;
-    height: 30px;
-    color: #0077e6;
-    border-radius: 5px;
-    border: 1.9px solid #0077e6;
-    background-color: white;
-    box-shadow: inset 0 0 0 0 #0077e6;
-    transition: ease-out 0.2s;
-    outline: none;
+.btn-pay {
+  margin-top: 15px;
+  width: 80px;
+  height: 30px;
+  color: #0077e6;
+  border-radius: 5px;
+  border: 1.9px solid #0077e6;
+  background-color: white;
+  box-shadow: inset 0 0 0 0 #0077e6;
+  transition: ease-out 0.2s;
+  outline: none;
 }
 
 .btn-pay:hover {
-   
-    box-shadow: inset 80px 0 0 0 #0077e6;
-    cursor: pointer;
-    color: white;
-
+  box-shadow: inset 80px 0 0 0 #0077e6;
+  cursor: pointer;
+  color: white;
 }
 
-.value-installment{
-    font-size: 20px;
+.dot-status-overdue {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+.dot-status-due {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 230, 0);
+  border-radius: 50%;
 }
 
-.due-date{
-    font-size: 12px;
+/* ----------------------- DUE-INSTALLMENTS end ----------------------- */
+
+/* ----------------------- PAID-INSTALLMENTS start ----------------------- */
+.paid-installments-grid {
+  height: 40vh;
+  overflow-y: scroll;
+}
+.dot-status-paid {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(1, 200, 1);
+  border-radius: 50%;
 }
 
-.installments-counter{
-    font-size: 14px;
-    position: relative;
-    top: 26px
+.btn-receipt {
+  margin-top: 15px;
+  width: 80px;
+  height: 30px;
+  color: #0077e6;
+  border-radius: 5px;
+  border: 1.9px solid #0077e6;
+  background-color: white;
+  box-shadow: inset 0 0 0 0 #0077e6;
+  transition: ease-out 0.2s;
+  outline: none;
 }
 
-/* 
+.btn-receipt:hover {
+  box-shadow: inset 80px 0 0 0 #0077e6;
+  cursor: pointer;
+  color: white;
+}
+/* ----------------------- PAID-INSTALLMENTS end ----------------------- */
 
-  .ribbon {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    position: absolute;
-  }
-  .ribbon::before,
-  .ribbon::after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    display: block;
-    border: 5px solid #2980b9;
-  }
-  .ribbon span {
-    position: absolute;
-    display: block;
-    width: 225px;
-    padding: 15px 0;
-    background-color: #3498db;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    color: #fff;
-    font: 700 18px/1 'Lato', sans-serif;
-    text-shadow: 0 1px 1px rgba(0,0,0,.2);
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  /* top right*/
-  /* .ribbon-top-right {
-    top: -10px;
-    right: -10px;
-  }
-  .ribbon-top-right::before,
-  .ribbon-top-right::after {
-    border-top-color: transparent;
-    border-right-color: transparent;
-  }
-  .ribbon-top-right::before {
-    top: 0;
-    left: 0;
-  }
-  .ribbon-top-right::after {
-    bottom: 0;
-    right: 0;
-  }
-  .ribbon-top-right span {
-    left: -25px;
-    top: 30px;
-    transform: rotate(45deg);
-  }
+/* ----------------------- INSTALLMENTS data start ----------------------- */
 
-  .box {
-    position: relative;
-  
-   
-    background: #fff;
-    box-shadow: 0 0 15px rgba(0,0,0,.1);
-  } */
+.value-installment {
+  font-size: 20px;
+}
+
+.due-date {
+  font-size: 12px;
+}
+
+.installments-counter {
+  font-size: 14px;
+  position: relative;
+  top: 26px;
+}
+/* ----------------------- INSTALLMENTS data end ----------------------- */
+
+/* ----------------------- CHART start ----------------------- */
+.chart-paper {
+  max-height: 37vh;
+  overflow-y: scroll;
+}
+/* ----------------------- CHART end ----------------------- */

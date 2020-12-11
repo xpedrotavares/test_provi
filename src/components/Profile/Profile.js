@@ -1,10 +1,10 @@
 import React, { useContext} from 'react';
-import {InstallmentDataContext} from '../context/InstallmentDataContext'
-// import style from '../assets/style/style.css';
-import UserPhoto from '../assets/images/Profile.jpg'
+
+import {InstallmentDataContext} from '../../context/InstallmentDataContext'
+import UserPhoto from '../../assets/images/Profile.jpg'
 
 const Profile = () =>{
-    const [installmentData, setInstallmentData] = useContext(InstallmentDataContext);
+    const [installmentData] = useContext(InstallmentDataContext);
     return (
 
         <div className='aside-profile d-flex flex-column align-items-center justify-content-center'>

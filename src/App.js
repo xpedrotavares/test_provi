@@ -1,24 +1,20 @@
-import React from 'react';
-import DashboardGrid from './components/grid-dash/DashboardGrid'
-import "bootstrap/dist/css/bootstrap.css";
-import Navbar from './Navbar'
-// import Profile from './components/Profile'
-// import style from './assets/style.css';
-// import getApiData from './api/api'
-// import axios from 'axios'
-import { ApiDataProvider } from './context/ApiDataContext'
-import { InstallmentDataProvider } from './context/InstallmentDataContext'
-// import DueInstallments from './installments/DueInstallments';
+import React from "react";
 
+import Style from './assets/style.css'
+import "bootstrap/dist/css/bootstrap.css";
+
+
+import { InstallmentDataProvider } from "./context/InstallmentDataContext";
+import { ApiDataProvider } from "./context/ApiDataContext";
+import Navbar from "./components/Navbar/Navbar";
+import DashboardGrid from "./components/grid-dashboard/DashboardGrid";
 
 function App() {
-  
   return (
     <InstallmentDataProvider>
-
-    <ApiDataProvider>
-      <Navbar/>
-      <DashboardGrid/>
+      <ApiDataProvider>
+        <Navbar />
+        <DashboardGrid />
       </ApiDataProvider>
     </InstallmentDataProvider>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
-import DueInstallments from "../installments/DueInstallments";
+
 export const ApiDataContext = createContext();
 
 export const ApiDataProvider = (props) => {
@@ -12,14 +12,10 @@ export const ApiDataProvider = (props) => {
     const response = await axios.get(api_url);
     setUserData([response.data]);
   }
-  
+
   useEffect(() => {
     getApiData();
   }, []);
-  // console.log('aqui =>' + userData.installments)
-//   console.log(userData[0].amountTaken)
-  
-
 
   return (
     <ApiDataContext.Provider value={[userData, setUserData]}>
